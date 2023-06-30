@@ -10,6 +10,7 @@ from utils import GetCorrectPredCount
 
 dropout_value = 0.1
 
+#this is using dilation instead of stride 2 conv
 class Net_d(nn.Module):
     def __init__(self):
         super(Net_d, self).__init__()
