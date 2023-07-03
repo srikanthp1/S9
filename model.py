@@ -122,9 +122,9 @@ class Net(nn.Module):
 
             # strided convolution with 2
             nn.Conv2d(k, k, 3,stride=2, padding=1, bias=False),           #32*32, 16*16, 5,6
-            nn.ReLU(),
-            nn.BatchNorm2d(k),
-            nn.Dropout(0.01),
+            # nn.ReLU(),
+            # nn.BatchNorm2d(k),
+            # nn.Dropout(0.01),
 
             # nn.Conv2d(40, 24, 1, bias=False),
 
@@ -153,9 +153,9 @@ class Net(nn.Module):
 
             # strided convolution with 2
             nn.Conv2d(k, k, 3,stride=2, padding=1, bias=False),           #16*16, 8*8, 18,20
-            nn.ReLU(),
-            nn.BatchNorm2d(k),
-            nn.Dropout(0.01),
+            # nn.ReLU(),
+            # nn.BatchNorm2d(k),
+            # nn.Dropout(0.01),
 
             # nn.Conv2d(32, 32, 1, bias=False),
         )
@@ -178,9 +178,9 @@ class Net(nn.Module):
 
             # strided convolution with 2
             nn.Conv2d(k, k, 3,stride=2, padding=1, bias=False),           #8*8, 4*4, 36,40
-            nn.ReLU(),
-            nn.BatchNorm2d(k),
-            nn.Dropout(0.01),
+            # nn.ReLU(),
+            # nn.BatchNorm2d(k),
+            # nn.Dropout(0.01),
 
             # nn.Conv2d(32, 24, 1, bias=False),
         )
